@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  background-image: url("https://cdn.pixabay.com/photo/2020/06/15/19/07/clouds-5303057_960_720.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  background: #e9ebeb;
+  border-radius: 8px;
+  padding: 1em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  width: 150px;
+  height: 250px;
+  margin: 2px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.weather-date {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.weather-icon-div {
+  font-size: 2em;
+}
+
+.weather-description {
+  font-size: 1em;
+  color: #666;
+}
+
+.weather-temperatures {
+  font-size: 1em;
+  color: #333;
+}
+
+.celcius,
+.fahrenheit {
+  font-weight: bold;
+}
