@@ -1,56 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 body {
+  background-color: rgb(64, 163, 170);
+}
+
+.Header {
+  color: #5b548a; /* Change the text color */
+  text-align: center; /* Center the text */
+  font-size: 2.5em; /* Increase the font size */
+  font-family: "Poppins", sans-serif; /* Change the font family */
+  margin-top: 20px; /* Add some margin at the top */
+}
+.container {
+  width: 90%;
+  max-width: 490px;
+  background: linear-gradient(135deg, #4ca890, #5b548a);
+  color: #fff;
+  margin: 20px auto 0;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+}
+
+.Search-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.Search-box input {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  color: #5b548a;
+  padding: 10px 15px;
+  height: 60px;
+  border-radius: 30px;
+  flex: 1;
+  margin-right: 16px;
+  font-size: 18px;
+  text-align:center;
+}
+
+.Search-box button {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+
+.Search-box button img {
+  width: 30px;
+  height: 30px;
+}
+
+.weather-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  text-align: center;
-  background-image: url("https://cdn.pixabay.com/photo/2020/06/15/19/07/clouds-5303057_960_720.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  padding: 20px;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.card {
-  background: #e9ebeb;
-  border-radius: 8px;
-  padding: 1em;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-  width: 150px;
-  height: 250px;
-  margin: 2px;
-  text-align: center;
+.box {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-}
-.weather-date {
-  font-size: 1.2em;
-  color: #333;
+  align-items: center;
 }
 
-.weather-icon-div {
+.info-weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Weather-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.temp {
   font-size: 2em;
 }
 
-.weather-description {
-  font-size: 1em;
-  color: #666;
+.description {
+  font-size: 1.5em;
 }
 
-.weather-temperatures {
-  font-size: 1em;
-  color: #333;
+.Weather-details {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
-.celcius,
-.fahrenheit {
-  font-weight: bold;
+.humidity,
+.wind_speed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.info-humidity,
+.info-wind_speed {
+  display: flex;
+  align-items: center;
+  color: #c3c1d1; /* Change the text color */
+  text-align: center; /* Center the text */
+  font-size: 1.5em; /* Increase the font size */
+  font-family: "Poppins", sans-serif; /* Change the font family */
+  margin-top: 50px; /* Add some margin at the top */
+}
+
+p{
+  font-size: 1.5em;
+  font-family: "Poppins", sans-serif;
+  color: #d4d4da;
+
+}
+.info-humidity img,
+.info-wind_speed img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
 }
