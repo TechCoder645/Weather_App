@@ -16,8 +16,8 @@ body {
   margin-top: 20px; /* Add some margin at the top */
 }
 .container {
-  width: 90%;
-  max-width: 490px;
+  width: 120%;
+  max-width: 390px;
   background: linear-gradient(135deg, #4ca890, #5b548a);
   color: #fff;
   margin: 20px auto 0;
@@ -45,7 +45,7 @@ body {
   flex: 1;
   margin-right: 16px;
   font-size: 18px;
-  text-align:center;
+  text-align: center;
 }
 
 .Search-box button {
@@ -128,11 +128,10 @@ body {
   margin-top: 50px; /* Add some margin at the top */
 }
 
-p{
+p {
   font-size: 1.5em;
   font-family: "Poppins", sans-serif;
   color: #d4d4da;
-
 }
 .info-humidity img,
 .info-wind_speed img {
